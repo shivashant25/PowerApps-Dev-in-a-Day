@@ -113,9 +113,12 @@ In this exercise, you will import a solution into your dev environment. This sol
 ### Task 1: Import solution
 
 1. Navigate to Power Apps maker portal by using below URL. Make sure the development environment is selected.
+   
    ```        
     https://make.powerapps.com
    ```
+   ![](images/L01/diadl7.png)
+   
 1. Select **Solutions** ***(1)*** from the side blade and click on **Import solution** ***(2)***.
 
    ![](images/L01/diadl9.png)
@@ -172,65 +175,74 @@ In this exercise, you will import a solution into your dev environment. This sol
 
 ## Exercise 3 - Review solution components
 
-In this exercise, you will review the components of the solution you imported, run a flow that will add
-sample data to your environment, and test the applications in the solution.
+In this exercise, you will review the components of the solution you imported, run a flow that will add sample data to your environment, and test the applications in the solution.
 
 ### Task 1: Review solution components and run flow
 
-1. Review data model diagram
+1. Review the data model diagram.
     
-     ![](images/L01/image7.png)
+   ![](images/L01/image7.png)
 
-2. Open the **PrioritZ** solution you imported.
+1. Open the **PrioritZ** solution you imported.
     
-     ![](images/L01/image8.png)
+   ![](images/L01/diadl19.png)
 
-3. Expand **Tables** and select the **PrioritZ Topic** table.
+1. Expand **Tables** and select the **PrioritZ Topic** table.
    
-     ![](images/L01/NewUi1.png)
+   ![](images/L01/diadl20.png)
 
-4. Select the **Columns** under Schema and review the columns of the PrioritZ Topic table. The standard columns are built-in, and all tables have them.
+1. Select the **Columns** under Schema and review the columns of the PrioritZ Topic table. The standard columns are built-in, and all tables have them.
  The custom columns were created by the team for this application.
  
-   ![](images/L01/NewUi2.png)
+   ![](images/L01/diadl21.png)
 
-5. Select the **Relationships** tab from Columns dropdown and review how this table is related to other tables.
+1. Select the **Relationships** tab from Columns dropdown and review how this table is related to other tables.
  
-    ![](images/L01/NewUi3.png)
- 
-    ![](images/L01/NewUi4.png)
+   ![](images/L01/diadl22.png)
 
-6. Select **Cloud flow**.
-7. Open the **Import sample data – Topics** flow.
+1. Select **Cloud flow** ***(1)*** from the side blade and Open the **Import sample data – Topics** ***(2)*** flow.
  
-    ![](images/L01/image10.png)
+   ![](images/L01/diadl23.png)
+   
+   >**Note:** If **Welcome to Power Automate** tab pops up, Please click on **Get started** and continue.
+   
+     ![](images/L01/diad24.png)
 
-8. Click **Edit**.
+1. In the **Import sample data - Topics** cloud flow page, Click **Edit**.
   
-    ![](images/L01/NewUiImport.png)
+   ![](images/L01/diadl25.png)
 
-9. Expand the Parse JSON step and review the data this flow will create.
-10. Expand the **Apply to each topic** step.
-11. Expand the **Apply to each topic item** step.
-12. The apply to each step should look like the image below. This is the logic for the automation.
+1. Expand the **Parse JSON** step and review the data this flow will create.
+
+   ![](images/L01/diadl26.png)
+
+1. Expand the **Apply to each topic** step.
+
+   ![](images/L01/diadl27.png)
+
+1. Expand the **Apply to each topic item** step and should look like the screenshot mentioned below. This is the logic used for the automation.
  
-     ![](images/L01/image11.png)
+   ![](images/L01/diadl28.png)
 
-13. Click on the **<- back** button.
+1. Click on the **<- back** button.
  
-     ![](images/L01/image12.png)
+   ![](images/L01/image12.png)
 
-14. Click on the flow name to open the flow detail screen.
-15. Click Run to run the flow.
-   
-     ![](images/L01/image13.png)
+1. Select the **Import sample data – Topics** flow again and click on run to execute the flow.
 
-16. Click the **Run flow** on the Run flow blade.
-17. Click **Done** and wait for the flow run to complete.
-18. The flow should run successfully. If you want, you can click on the run row and it will show you
-    the details of what the flow did.
+   ![](images/L01/diadl29.png)
+
+1. Click the **Run flow** on the Run flow blade.
+
+   ![](images/L01/diadl30.png)
    
-      ![](images/L01/image14.png)
+1. Click **Done** and wait for the flow run to complete.
+
+   ![](images/L01/diadl31.png)
+   
+1. Click on the **refresh** button and you should be able to see that the flow run is completed successfully. You can explore the flow execution by clicking on the run. You'll see the step-by-step execution.
+   
+   ![](images/L01/diadl32.png)
 
 ### Task 2: Test the apps
 
@@ -238,45 +250,58 @@ sample data to your environment, and test the applications in the solution.
    ```
        https://make.powerapps.com
    ```
-2. Select **Apps**. You should see two applications. **PrioritZ Ask** and **PrioritZ Admin**. PrioritZ Admin
-    app is used to manage topics being asked about. PrioritZ Ask app allows users to respond.
-3. Launch the **PrioritZ Admin** application.
+   
+   ![](images/L01/diadl7.png)
+   
+1. Select **Apps**. You should see two applications - **PrioritZ Ask** and **PrioritZ Admin**. PrioritZ Admin app is used to manage topics being asked about. PrioritZ Ask app allows users to respond.
+
+   ![](images/L01/diadl33.png)
+
+1. Launch the **PrioritZ Admin** application.
     
-    ![](images/L01/image15.png)
+   ![](images/L01/diadl34.png)
 
-4. You should see at least four topics.
-5. Click to open one of the topics.
-6. You should see the topic details with some topic items.
-7. Click on the **<** back button
-8. You should go back to the home screen.
-9. Click on the **+** button.
+1. You should see at least four topics. Click any one of the topics to open.
+
+   ![](images/L01/diadl35.png)
+   
+1. You should see the topic details with some topic items. Click on the **less than symbol (<)** button to go to back to home page
+
+   ![](images/L01/diadl36.png)
+   
+1. Click on the **+** button to add a new topic.
     
-    ![](images/L01/image16.png)
+   ![](images/L01/diadl37.png)
 
-10. Provide a topic, details, respond by date and click add a picture.
+1. Provide a topic, details, respond by date, click add a picture. You can select any image from your computer.
      
-     ![](images/L01/image17.png)
+   ![](images/L01/diadl38.png)
 
-11. Select any image from your computer.
-12. Type something on the Choice filed and click add a picture.
+1. Type something on the Choice field and click on add a picture.
      
-      ![](images/L01/image18.png)
+   ![](images/L01/diadl39.png)
 
-13. Click **+** to add the choice.
+1. Click **+** to add the choice.
      
-      ![](images/L01/image19.png)
+   ![](images/L01/diadl40.png)
 
-14. Add couple more choices.
-15. Click **Save**.
-    
-    ![](images/L01/image20.png)
+1. Add couple more **choices** ***(1)***. Click on **Save** ***(2)***.
 
-16. The new topic should be saved, and you should be navigated back to main screen.
-17. You should see the topic you added in the list of topics.
-18. Close the PrioritZ Admin application.
-19. Launch the **PrioritZ Ask** application.
+   ![](images/L01/diadl41.png)
+
+1. The new topic should be saved, and you should be navigated back to main screen.
+   
+   ![](images/L01/diadl42.png)
+   
+1. You should see the topic you added in the list of topics.
+
+   ![](images/L01/diadl43.png)
+   
+1. Close the PrioritZ Admin application.
+
+1. Launch the **PrioritZ Ask** application.
      
-     ![](images/L01/image21.png)
+   ![](images/L01/diadl44.png)
 
 20. You should see a list of topics. Open the topic you created.
 21. Click on the up/down icons and order the items in the order you prefer them and click **Vote**.
