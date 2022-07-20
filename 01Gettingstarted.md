@@ -11,7 +11,7 @@
 
 2. Exercise 2 - Import starting solution 
 
-    - Task 1: Import solution 
+   - Task 1: Import solution 
 
 3. Exercise 3 - Review solution components 
 
@@ -49,34 +49,66 @@ use in the ALM labs.
 
 ### Task 1: Create dev environment
 
-1. Navigate to Power Apps Developer Plan by using below link.
+1. Using the browser from the desktop, Navigate to Power Apps Developer Plan by using below link.
 ```
 https://powerapps.microsoft.com/en-in/developerplan/
 ```
-2. Select **Add a dev environment**.
+1. Select **Add a dev environment**.
     
       ![](images/L01/image1.png)
 
-3. Sign in if prompted.
-* Email/Username: <inject key="AzureAdUserEmail"></inject>
-* Password: <inject key="AzureAdUserPassword"></inject>
+1. Sign in if prompted.
+   * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
-4. Select your country and click **Accept**.
-5. You should be navigated to the new **dev environment created for you** . Select the new
-    **environment** and stay sign in.
+     ![](images/L01/diadl1.png)
+     
+   * Password: <inject key="AzureAdUserPassword"></inject>
 
-    ![](images/L01/image2.png)
+     ![](images/L01/diadl2.png)
+     
+   >**Note:** If there's another popup entitled **Help us protect your account** click **Skip for now (14 days until this is required)**
+   
+     ![](images/L01/diadl3.png)
+     
+   >**Note:** If there's a popup entitled **Stay signed in?** with buttons for **No** and **Yes** - Choose **No**.
+   
+     ![](images/L01/diadl4.png)
 
-6. Expand **Dataverse**   and select **Tables** .
-7. You should see several Dataverse tables that are created with every environment.
+1. Select your **country** ***(1)*** and click **Accept** ***(2)***.
+
+   ![](images/L01/diadl5.png)
+   
+   >**Note:** If there's another popup entitled **Help us protect your account** click **Skip for now (14 days until this is required)**
+   
+     ![](images/L01/diadl3.png)
+     
+   >**Note:** If there's a popup entitled **Stay signed in?** with buttons for **No** and **Yes** - Choose **No**.
+   
+     ![](images/L01/diadl4.png)
+     
+   >**Note:** In case if **Contact Information** appears, make sure **email** ***(1)***, **country/region** ***(2)*** is pre-pouluated with correct details. Also provide **Phone number** **(3)** and click on **Submit** ***(4)***.
+   
+     ![](images/L01/diadl6.png)
+
+1. You should be navigated to the new **dev environment created for you** . Select the new **ODL_User <inject key="DeploymentID"></inject>'s Environment** and stay signed in.
+
+   ![](images/L01/diadl7.png)
+   
+   >**Note**: **ODL_User <inject key="DeploymentID"></inject>'s Environment** is the **development evironment** which you'll be using throughout the lab. Please select the same environment where ever required.
+
+1. Expand **Dataverse** ***(1)*** and select **Tables** ***(2)***.
+
+   ![](images/L01/diadl8.png)
+
+1. You should see several Dataverse tables that are created with every environment.
  
     ![](images/L01/image3.png)
 
-**NOTE** [If you not able see table data could you please  wait 1 or 2 minutes it will show] 
+**NOTE**: If you don't see the table data, please wait for 2 - 3 minutes as it might take few minutes to load the data.
+
 ## Exercise 2 - Import starting solution
 
-In this exercise, you will import a solution into your dev environment. This solution contains the current
-Prioritz apps, flows and Dataverse tables.
+In this exercise, you will import a solution into your dev environment. This solution contains the current Prioritz apps, flows and Dataverse tables.
 
 ### Task 1: Import solution
 
@@ -84,28 +116,59 @@ Prioritz apps, flows and Dataverse tables.
    ```        
     https://make.powerapps.com
    ```
-2. Select **Solutions** and click **Import**.
-3. Click **Browse**.
-4. Go to the lab resources folder C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources, select the **Prioritz_1_0_0_7.zip** file, and click **Open**.
-5. Click **Next** .
+1. Select **Solutions** ***(1)*** from the side blade and click on **Import solution** ***(2)***.
+
+   ![](images/L01/diadl9.png)
    
-    ![](images/L01/image4.png)
+1. On the **Import a solution** tab, Click on **Browse** to the select the file.
 
-6. Click **Next**  again on the Import solution blade.
-7. Click on the **Select a connection** dropdown and the select **+ New connection**.
+1. Navigate to `C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources` ***(1)***, select the **Prioritz_1_0_0_7.zip** ***(2)*** file, and click **Open** ***(3)***.
+
+   ![](images/L01/diadl10.png)
+   
+1. You'll be able to see that **Prioritz_1_0_0_7.zip** ***(1)*** has been selected. Click on **Next** ***(2)*** to proceed.
+   
+   ![](images/L01/diadl11.png)
+
+1. Again click on **Next** to proceed in Import a solution tab.
+
+   ![](images/L01/diadl12.png)
+
+1. Click on the **Select a connection** dropdown and select the **+ New connection**.
   
-    ![](images/L01/image5.png)
+   ![](images/L01/diadl13.png)
 
-8. Click **Create**.
-9. Sign in if prompted.
-10. Close the connections browser window or tab.
-11. Click **Refresh**.
-12. Click **Import** and wait for the solution import to complete.
+1. On the newly opened browser tab, click on **Create**.
+
+   ![](images/L01/diadl14.png)
+   
+1. If the sign in prompt pops up, Select the correct account and continue.
+
+   ![](images/L01/diadl15.png)
+
+   >**Note:** If there's another popup entitled **Help us protect your account** click **Skip for now (14 days until this is required)**
+   
+     ![](images/L01/diadl3.png)
      
-     ![](images/L01/image6.png)
+   >**Note:** If there's a popup entitled **Stay signed in?** with buttons for **No** and **Yes** - Choose **No**.
+   
+     ![](images/L01/diadl4.png)
 
-13. You should now see the solution you imported in the list of solutions.
-14. Do not navigate away from this page.
+1. You'll be able to see the newly created connection. Close the connections browser tab and navigate to the previously opened **Import a solution** browser tab.
+
+1. On the **Import a solution** browser tab, Click on **Refresh** ***(1)***.select the **new connection** ***(2)*** from the drop down and click on **Import** ***(3)***.
+
+   ![](images/L01/diadl16.png)
+   
+1. Please wait for the solution import to complete.
+
+   ![](images/L01/diadl17.png)
+   
+1. You should now be able to see the imported solution in the list of solutions.
+
+   ![](images/L01/diadl18.png)
+
+1. Do not navigate away from this page.
 
 ## Exercise 3 - Review solution components
 
